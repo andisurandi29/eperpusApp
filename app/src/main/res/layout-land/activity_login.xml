@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="-50dp"
+            android:layout_gravity="start"
+            android:src="@drawable/variasi_dua" />
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="211dp"
+            android:src="@drawable/logo_eperpus"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/variasi_satu" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silahkan masukan email dan password untuk melanjutkan"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Email"/>
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:hint="Masukan email"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/bg_editext_login"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Password"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:paddingStart="15dp"
+                    android:hint="********"
+                    android:inputType="textPassword"
+                    android:background="@drawable/bg_editext_login"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lupa password? "
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bantuan"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        android:textColor="@color/primary"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="255dp"
+                        android:layout_height="50dp"
+                        android:text="Masuk"
+                        android:background="@drawable/btn_rounded"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnscanfinger"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:drawable="@drawable/ic_finger_print"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/second"
+                        app:cardCornerRadius="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_finger_print"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belum punya akun? "
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/daftar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="14sp"
+                        android:textColor="@color/primary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

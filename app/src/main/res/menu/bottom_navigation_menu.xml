@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Beranda"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+    <item
+        android:id="@+id/navigation_riwayat"
+        android:icon="@drawable/ic_riwayat"
+        android:title="Riwayat"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+    <item
+        android:id="@+id/navigation_akun"
+        android:icon="@drawable/ic_akun"
+        android:title="Akun"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"/>
+</menu>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/primary">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            app:titleTextColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/coverBuku"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:src="@color/second"
+                android:contentDescription="TODO" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/judulBuku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/kategoriBuku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori : "
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tahunTerbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tahun : "
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penulis"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/penulisBuku"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Penulis"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penerbit"
+                    android:gravity="start"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/penerbitBuku"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penerbit"
+                    android:gravity="start"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/deskripsiBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

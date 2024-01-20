@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">E-Perpus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_duration">Pilih durasi pinjam</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="todo">TODO</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="silahkan_masukan_email_dan_password_untuk_melanjutkan">Silahkan masukan email dan password untuk melanjutkan</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="lupa_password">Lupa password?</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="password_label">********</string>
+    <string name="masukan_username">Masukan username</string>
+</resources>

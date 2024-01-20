@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="287dp"
+    android:layout_height="158dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".BannerFragment">
+
+    <ImageView
+        android:id="@+id/image_buku"
+        android:layout_width="128dp"
+        android:layout_height="158dp"
+        android:src="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judul_buku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku Tervaforit disini"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lorem ipsum dollor summit hsbaakk lorem ipsum dollor summit hsbaakk"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
